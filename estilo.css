@@ -1,0 +1,1109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+@media(max-width:4000px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0px;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+    }
+
+    header a{
+        color: black;
+        margin-right: 20px;
+        font-size: 16.5px;
+    }
+
+    header nav a:hover{
+        text-decoration: underline #2292a7 1px;
+    }
+
+    header h1{
+        color: #2292a7;
+    }
+
+    header .login .ingresar{
+        color: #2292a7;
+    }
+    header .login .ingresar:hover{
+        text-decoration: underline #2292a7 1px;
+    }
+
+    header .login .registrarse{
+        color: white;
+        background-color: #2292a7;
+        padding: 8px 29px;
+        border-radius: 15px;
+        transition-property:color,background-color;
+        transition-duration:0.6s ;
+    }
+    header .login .registrarse:hover{
+        background-color: #ffc106;
+        color:black;
+    }
+    .hero{
+        height: 100vh;
+        position: relative;
+        background-color: #f2f2f3;
+    }
+    .fondoHero{
+        background-image: url(imagenes/FondoHero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 93%;
+        margin: 0 auto;
+        height: 78vh;
+        position: absolute;
+        left: 3.8%;
+        top: 15.1%;
+        border-radius: 20px;
+    }
+
+    .fondoHero::before{
+        content: "";
+        width: 100%;
+        height: 78vh;
+        border-radius: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background:linear-gradient(30deg,#1e1e1e,#444444);
+        opacity: 0.4;
+    }
+
+    .contHero{
+        position: absolute;
+        top: 15%;
+        left: 4%;
+    }
+
+    .contHero .titulos h1{
+        color: white;
+        font-size: 70px;
+    }
+
+    .contHero .titulos p{
+        color: white;
+        font-size: 21px;
+        width: 80%;
+        line-height: 28px;
+        padding-top: 25px;
+    }
+
+    .contHero .opciones{
+        display: flex;
+        margin-top: 45px;
+    }
+
+    .contHero .opciones button{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 20px 40px;
+        font-size: 16px;
+        border-radius: 20px 20px 0px 0px;
+        transition-property:background-color;
+        transition-duration:0.5s ;
+        cursor: pointer;
+        border:none;
+    }
+
+    .contHero .opciones button:hover{
+        background-color: #ffc106;
+    }
+
+    .contHero form{
+        background-color: white;
+        padding: 35px 0px;
+        padding-left: 80px;
+        padding-right: 100px;
+        border-radius: 0px 20px 20px 20px;   
+    }
+    .contForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contForm .responsive{
+        display: flex;
+    }
+    .contHero form p,.contHero form label{
+        font-weight: bold;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .contHero form .destinos{
+        display: flex;
+    }
+
+    .contHero form .destinos select{
+        padding: 14px 0px;
+        padding-left: 15px;
+        padding-right: 60px;
+        font-size: 17px;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+    .contHero form .encimar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contHero form input[type=date]{
+        padding: 14px 30px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+    .contHero form button{
+        background-color: #2292a7;
+        color: white;
+        border: none;
+        margin-left: 80px;
+        padding: 17px 55px;
+        font-size: 17px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 25px;
+        transition-property:background-color,color;
+        transition-duration:0.6s;
+    }
+    .contHero form button:hover{
+        background-color: #ffc106;
+        color:black;
+    }
+
+    .explorar{
+        height: 90vh;
+        padding-top: 40px;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .explorar .encabezado{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .explorar .titulos h1{
+        font-size: 40px;
+    }
+    .explorar .titulos p{
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 18px;
+    }
+    .flechas{
+        font-size: 25px;
+    }
+    .flechas .derecha{
+        background-color: #2292a7;
+        padding: 6px 10px;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .flechas .izquierda{
+        margin-right: 45px;
+        cursor: pointer;
+    }
+    .explorar .contExplorar{
+        display: flex;
+        justify-content: space-between;
+        height: 60vh;
+    }
+    .contExplorar .caja{
+        width: 30%;
+        border-radius: 15px;
+        border: 1px solid rgb(128, 128, 128,0.4);
+        position: relative;
+    }
+    .contExplorar .caja img{
+        position: absolute;
+        width: 94%;
+        border-radius: 20px;
+        top: 3%;
+        left: 2.5%;
+        z-index: -1;
+    }
+
+    .contExplorar .caja .estrellas{
+        background-color: white;
+        padding: 8px 20px;
+        display: flex;
+        position: absolute;
+        top: 5%;
+        left: 73%;
+        border-radius: 10px;
+    }
+
+    .contExplorar .caja .estrellas i{
+        margin-right: 10px;
+        color: #ffc106;
+        font-size: 15px;
+    }
+    .contExplorar .caja .estrellas p{
+        font-size: 15px;
+    }
+
+    .contExplorar .caja .info{
+        position: absolute;
+        top: 65%;
+        left: 3%;
+        width: 92%;
+    }
+
+    .contExplorar .caja .info h2{
+        font-size: 27px;
+    }
+
+    .contExplorar .caja .info .ubi{
+        display: flex;
+        padding-top: 13px;
+        padding-bottom: 43px;
+    }
+
+    .contExplorar .caja .info .ubi i{
+        color: #7b4cff;
+        font-size: 18px;
+    }
+
+    .contExplorar .caja .info .ubi p{
+        font-size: 17px;
+        padding-left: 5px;
+    }
+
+    .contExplorar .caja .info .precio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contExplorar .caja .info .precio span{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    .contExplorar .caja .info .precio p{
+        font-size: 15px;
+        color: grey;
+    }
+    .contExplorar .caja .info .precio a{
+        background-color: #2292a7;
+        color: white;
+        padding:10px 17px;
+        border-radius: 10px;
+        transition-property:color,background-color;
+        transition-duration:0.6s ;
+    }
+    .contExplorar .caja .info .precio a:hover{
+        background-color: #ffc106;
+        color:black;
+    }
+
+    .explorar .puntos{
+        color: grey;
+        font-size: 17px;
+        width: 8%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .explorar .puntos i{
+        cursor: pointer;
+        padding-right: 5px;
+    }
+
+    .explorar .puntos .negro{
+        color: black;
+    }
+
+    .beneficios{
+        height: 110vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .beneficios .fondo{
+        background-color:#f6f6f6;
+        height: 92vh;
+        margin-top: 15px;
+    }
+    .beneficios .cabecera{
+        width: 92%;
+        margin: 0 auto;
+    }
+    .beneficios p{
+        color: #ffc106;
+        font-size: 17px;
+        padding-bottom: 25px;
+    }
+    .beneficios h1{
+        font-size: 42px;
+        padding-bottom: 30px;
+    }
+    .contBeneficio{
+        display: flex;
+        height: 92vh;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .contBeneficio .info{
+        width: 40%;
+    }
+
+    .contBeneficio .info .caja{
+        color: white;
+        background-color: #7b4cff;
+        width: 5%;
+        padding: 13px 13px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .contBeneficio .info .c1{
+        margin-top: 25px;
+    }
+    .contBeneficio .info .c2{
+        background-color: #2292a7;
+    }
+    .contBeneficio .info .c3{
+        background-color: #ffc106;
+    }
+    .contBeneficio .info h2{
+        padding-top: 20px;
+        font-size: 26px;
+    }
+    .contBeneficio .info p{
+        color: rgb(100, 99, 99);
+        padding-top: 15px;
+    }
+    .contBeneficio .info .ultText{
+        padding-bottom: 50px;
+    }
+    .contBeneficio .info a{
+        background-color: #2292a7;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        transition-property:color,background-color;
+        transition-duration:0.6s ;
+    }
+    .contBeneficio .info a:hover{
+        background-color: #ffc106;
+        color:black;
+    }
+    .contBeneficio .imagenes{
+        width: 60%;
+        position: relative;
+    }
+    .contBeneficio .imagenes .img1{
+        position: absolute;
+        border-radius: 20px;
+        width: 630px;
+        height: 500px;
+        top: 7%;
+        left: 20%;
+    }
+    .contBeneficio .imagenes .img2{
+        position: absolute;
+        border-radius: 20px;
+        width: 190px;
+        height: 200px;
+        top: 57%;
+        left: 21%;
+        border: 10px solid white;
+    }
+    .contBeneficio .imagenes .img3{
+        position: absolute;
+        border-radius: 20px;
+        width: 195px;
+        height: 210px;
+        top: 57%;
+        left: 45.8%;
+    }
+    .contBeneficio .imagenes .img4{
+        position: absolute;
+        border-radius: 20px;
+        width: 195px;
+        height: 210px;
+        top: 57%;
+        left: 69%;
+    }
+
+    .vacaciones{
+        display: flex;
+        height: 90vh;
+    }
+
+    .vacaciones .imagenes{
+        width: 50%;
+        position: relative;
+    }
+
+    .vacaciones .info{
+        width: 50%;
+    }
+    .vacaciones .info h1{
+        font-size: 48px;
+        padding-top: 75px;
+        width: 80%;
+    }
+
+    .vacaciones .info .descripcion{
+        font-size: 17px;
+        width: 70%;
+        padding-top: 25px;
+        padding-bottom: 45px;
+        color: rgb(100, 99, 99);
+        line-height: 25px;
+    }
+
+    .vacaciones .info a{
+        background-color: #2292a7;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 10px;
+        transition-property:color,background-color;
+        transition-duration:0.6s ;
+    }
+    .vacaciones .info a:hover{
+        background-color: #ffc106;
+        color:black;
+    }
+
+    .vacaciones .datos{
+        display: flex;
+        padding-top: 80px;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .vacaciones .datos h2{
+        color:#2292a7;
+        font-size: 27px;
+        padding-bottom: 15px;
+    }
+    .vacaciones .datos p{
+        width: 88%;
+        font-size: 18px;
+    }
+    .vacaciones .imagenes .img1{
+        position: absolute;
+        width: 40%;
+        top: 12%;
+        left: 7%;
+        border-radius: 15px;
+    }
+    .vacaciones .imagenes .img2{
+        position: absolute;
+        width: 40%;
+        top: 25%;
+        left: 36%;
+        border-radius: 15px;
+        border: 10px solid white;
+    }
+    .turista{
+        height: 90vh;
+        width: 100%;
+    }
+    .turista .encabezado{
+        display: flex;
+        justify-content: space-between;
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .turista .encabezado h1{
+        font-size: 42px;
+        padding-bottom: 30px;
+    }
+    .turista .fondo{
+        background-color:#f6f6f6;
+    }
+    .turista .contTurista{
+        display: flex;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .turista .contTurista .imagenes{
+        position: relative;
+        width: 50%;
+        background-image: url(imagenes/diana.png);
+        background-repeat: no-repeat;
+        background-size: 450px;
+        background-position: center;
+    }
+    .turista .contTurista .imagenes .caras .img1{
+        width: 115px;
+        position: absolute;
+        top: 39%;
+        left: 14%;
+        border-radius: 50px;
+    }
+    .turista .contTurista .imagenes .caras .img2{
+        width: 115px;
+        position: absolute;
+        top: 68%;
+        left: 65%;
+        border-radius: 50px;
+        
+    }
+    .turista .contTurista .imagenes .caras .img3{
+        width: 115px;
+        position: absolute;
+        top: 7%;
+        left: 43%;
+        border-radius: 50px;
+    }
+    .turista .contTurista .imagenes .caras .img4{
+        width: 115px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        border-radius: 50px;
+        
+    }
+    .turista .contTurista .imagenes .caras .img5{
+        width: 115px;
+        position: absolute;
+        top: 55%;
+        left: 35%;
+        border-radius: 50px;
+        
+    }
+
+    .turista .contTurista .info{
+        width: 50%;
+        height: 68vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+    }
+    .turista .contTurista .info p{
+        font-size: 20px;
+        width: 70%;
+        line-height: 30px;
+        padding-bottom: 60px;
+    }
+    .turista .contTurista .info .nombre{
+        display: flex;
+        align-items: center;
+    }
+    .turista .contTurista .info .nombre img{
+        height: 5px;
+        width: 6%;
+    }
+    .turista .contTurista .info .nombre h2{
+        padding-left: 20px;
+    }
+    .turista .contTurista .info .cuidad{
+        padding-left: 75px;
+        padding-top: 10px;
+        color: rgb(100, 99, 99);
+    }
+    .turista .contTurista .img1{
+        position: absolute;
+        top: 37%;
+        left: -7%;
+        width: 50px;
+    }
+    .turista .contTurista .img2{
+        position: absolute;
+        top: 60%;
+        left: 63%;
+        width: 50px;
+    }
+    .acceso{
+        height: 90vh;
+        width: 92%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .acceso h1{
+        font-size: 44px;
+        width: 50%;
+    }
+    .acceso .imagenes .imgMundo{
+        position: absolute;
+        top: 0%;
+        left: 27%;
+        width: 73%;
+    }
+    .contAcceso{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 60vh;
+    }
+    .contAcceso h2{
+        font-size: 38px;
+    }
+    .contAcceso p{
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contAcceso form{
+        border: 2px solid rgb(34, 146, 167);
+        width: 32%;
+        padding: 5px 0px;
+        border-radius: 15px ;
+    }
+    .contAcceso form input[type=email]{
+        padding: 15px 50px;
+        font-size: 17px;
+        border: none;
+        border-radius: 15px;
+    }
+    .contAcceso form button{
+        background-color: #2292a7;
+        color: white;
+        font-size: 17px;
+        padding: 15px 0px;
+        width: 35%;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition-property:color,background-color;
+        transition-duration:0.6s ;
+    }
+    .contAcceso form button:hover{
+        background-color: #ffc106;
+        color:black;
+    }
+
+    .anuncio{
+        width: 87%;
+        margin: 0 auto;
+        background-color: #389db0;
+        border-radius: 15px;
+        height: 45vh;
+    }
+    .anuncio .contAnuncio{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .anuncio .contAnuncio h1{
+        font-size: 40px;
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        line-height: 65px;
+    }
+    .anuncio .contAnuncio p{
+        color: white;
+        font-size: 21px;
+        padding-bottom: 50px;
+    }
+    .anuncio .contAnuncio a{
+        background-color: #ffc106;
+        color: white;
+        font-size: 18px;
+        padding: 13px 50px;
+        border-radius: 10px;
+        transition-property:color,background-color;
+        transition-duration:0.6s ;
+    }
+    .anuncio .contAnuncio a:hover{
+        background-color: #2292a7;
+        color: white;
+    }
+
+    footer{
+        background-color: #f6f6f6;
+        margin-top: 80px;
+        height: 50vh;
+    }
+    footer .contFooter{
+        height: 37vh;
+        display: flex;
+        width: 92%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .contFooter .info{
+        width: 30%;
+    }
+    .contFooter .info h2{
+        font-size: 40px;
+        padding: 15px 0px;
+    }
+    .contFooter .info p{
+        font-size: 17px;
+        width: 68%;
+        padding-bottom: 40px;
+    }
+    .contFooter .info .iconos{
+        display: flex;
+        justify-content: space-between;
+        width: 43%;
+    }
+    .contFooter .info .iconos i{
+        font-size: 20px;
+        color: white;
+        background-color: #2292a7;
+        padding: 6px 6px;
+        border-radius: 15px;
+    }
+    .contFooter .contLinks{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .contFooter .links{
+        display: flex;
+        flex-direction: column;
+        padding-top:15px;
+        width: 40%;
+    }
+    .contFooter .links p{
+        font-weight: bold;
+        font-size: 19px;
+    }
+    .contFooter .links a{
+        padding-top: 15px;
+        font-size: 18px;
+        color:grey;
+    }
+    .contFooter .links a:hover{
+        text-decoration: underline;
+    }
+    .linea{
+        background-color: rgb(128, 128, 128,0.4);
+        width: 92%;
+        margin: 0 auto;
+        height: 2px;
+    }
+    .copy{
+        width: 25%;
+        margin:  0 auto;
+        padding-top: 40px;
+        color: grey;
+    }
+
+}
+
+@media(max-width:480px){
+    header nav{
+        display: none;
+    }
+    header .login{
+        display: none;
+    }
+    header .oculto{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    header h1{
+        font-size: 24px;
+    }
+    .fondoHero{
+        height: 93vh;
+        left: 0;
+        top:8%;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .fondoHero::before{
+        height: 93vh;
+        border-radius: 0px;
+    }
+    .contHero{
+        left: 3%;
+        top: 5%;
+    }
+    .contHero .titulos h1{
+        font-size:42px;
+        width: 80%;
+    }
+
+    .contHero .titulos p{
+        font-size: 19px;
+        width: 85%;
+    }
+
+    .contHero .opciones{
+        display: flex;
+        margin-top: 45px;
+    }
+
+    .contHero .opciones button{
+        padding: 20px 26.5px;
+        font-size: 14px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .contHero form{
+        background-color: white;
+        padding: 15px 0px;
+        border-radius: 0px 0px 10px 10px;
+        width: 97%;
+    }
+    .contForm{
+        flex-direction:column;
+    }
+    .contForm .responsive{
+        display: flex;
+        flex-direction: row;
+    }
+    .contHero form p,.contHero form label{
+        font-size: 14px;
+    }   
+    .contHero form .destinos select{
+        padding: 10px 0px;
+        padding-left: 10px;
+        padding-right: 30px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .contHero form .encimar{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .contHero form input[type=date]{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .contHero form button{
+        margin-left:5px;
+        padding: 10px 30px;
+    }
+
+
+    .explorar .contExplorar .ocultar{
+        display: none;
+    }
+    .explorar .titulos h1{
+        font-size: 35px;
+    }
+    .explorar .titulos p{
+        font-size: 14px;
+    }
+    .flechas{
+        display: none;
+    }
+    .contExplorar .caja{
+        width: 98%;
+    }
+    .contExplorar .caja img{
+        position: absolute;
+        width: 95%;
+    }
+
+    .contExplorar .caja .estrellas{
+        padding: 5px 18px;
+        top: 7%;
+        left: 68%;
+    }
+
+    .contExplorar .caja .estrellas i{
+        font-size: 13px;
+    }
+    .contExplorar .caja .estrellas p{
+        font-size: 13px;
+    }
+
+    .contExplorar .caja .info{
+        position: absolute;
+        top: 55%;
+        left: 3%;
+        width: 92%;
+    }
+
+    .explorar .puntos{
+        font-size: 13px;
+        width: 30%;
+    }
+
+    .beneficios{
+        height: 200vh;
+    }
+    .beneficios .fondo{
+        background-color:#f6f6f6;
+        height: 170vh;
+        margin-top: 15px;
+    }
+    .beneficios p{
+        color: #ffc106;
+        font-size: 17px;
+        padding-bottom: 25px;
+    }
+    .beneficios h1{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .contBeneficio{
+        display: flex;
+        height: 160vh;
+        width: 92%;
+        flex-direction: column-reverse;
+    }
+    .contBeneficio .info{
+        width: 100%;
+    }
+    .contBeneficio .imagenes{
+        width: 100%;
+        position: relative;
+        height: 170vh;
+    }
+    .contBeneficio .imagenes .img1{
+        position: absolute;
+        border-radius: 20px;
+        width: 100%;
+        height: 370px;
+        top:0%;
+        left: 0%;
+    }
+    .contBeneficio .imagenes .img2{
+        position: absolute;
+        border-radius: 20px;
+        width: 27%;
+        height: 150px;
+        top: 53%;
+        left: 1%;
+        border: 10px solid white;
+    }
+    .contBeneficio .imagenes .img3{
+        position: absolute;
+        border-radius: 20px;
+        width: 28%;
+        height: 150px;
+        top: 55%;
+        left: 37%;
+    }
+    .contBeneficio .imagenes .img4{
+        position: absolute;
+        border-radius: 20px;
+        width: 28%;
+        height: 150px;
+        top: 55%;
+        left: 68%;
+    }
+    .vacaciones{
+        display: flex;
+        height: 135vh;
+        flex-direction: column;
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .vacaciones .imagenes{
+        width: 100%;
+        position: relative;
+        height: 45vh;
+    }
+
+    .vacaciones .info{
+        width: 100%;
+        height: 93vh;
+    }
+    .vacaciones .info h1{
+        font-size: 34px;
+        width: 90%;
+        padding-top: 0;
+    }
+
+    .vacaciones .info .descripcion{
+        font-size: 15px;
+        width: 90%;
+    }
+    .vacaciones .info a{
+        padding: 15px 25px;
+    }
+    .vacaciones .datos{
+        width: 80%;
+    }
+
+    .vacaciones .datos h2{
+        color:#2292a7;
+        font-size: 27px;
+        padding-bottom: 15px;
+    }
+    .vacaciones .datos p{
+        width: 88%;
+        font-size: 18px;
+    }
+    .vacaciones .imagenes .img1{
+        position: absolute;
+        width: 55%;
+        top: 5%;
+        left: 7%;
+        border-radius: 15px;
+    }
+    .vacaciones .imagenes .img2{
+        position: absolute;
+        width: 50%;
+        top: 20%;
+        left: 36%;
+        border-radius: 15px;
+        border: 10px solid white;
+    }
+    .turista{
+        height: 70vh;
+        width: 100%;
+    }
+    .turista .encabezado h1{
+        font-size: 35px;
+    }
+    .turista .contTurista .imagenes{
+        display: none;
+    }
+    .turista .contTurista .info{
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+    }
+    .turista .contTurista .info p{
+        font-size: 18px;
+        width: 100%;
+        line-height: 30px;
+        padding-bottom: 60px;
+    }
+    .turista .contTurista .info .nombre{
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+    }
+    .turista .contTurista .info .nombre img{
+        height: 5px;
+        width: 6%;
+    }
+    .turista .contTurista .info .nombre h2{
+        padding-left: 20px;
+    }
+    .turista .contTurista .info .cuidad{
+        padding-left: 40px;
+        font-size: 11px;
+    }
+    .turista .contTurista .img1{
+        position: absolute;
+        top: 4%;
+        left: 0%;
+        width: 30px;
+    }
+    .turista .contTurista .img2{
+        position: absolute;
+        top: 45%;
+        left: 80%;
+        width: 30px;
+    }
+}
